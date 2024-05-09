@@ -8,7 +8,7 @@ inline int main(int argc, char** argv)
 {
 	Astro::Log::Init();
 	AST_CORE_WARN("Initialized Log!");
-	const int a = 5;
+	constexpr int a = 5;
 	AST_INFO("Hello! Var={0}", a);
 
 	auto app = Astro::CreateApplication();
