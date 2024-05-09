@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "Astro/Application.h"
+#include "Astro/Log.h"
 
 #pragma region Entry Point
 

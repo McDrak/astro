@@ -4,9 +4,13 @@
 
 extern Astro::Application* Astro::CreateApplication();
 
-int main(int argc, char** argv)
+inline int main(int argc, char** argv)
 {
-	printf("Astro Engine!\n");
+	Astro::Log::Init();
+	AST_CORE_WARN("Initialized Log!");
+	const int a = 5;
+	AST_INFO("Hello! Var={0}", a);
+
 	auto app = Astro::CreateApplication();
 	app->Run();
 	delete app;
